@@ -1,4 +1,4 @@
-FROM bellsoft/liberica-openjdk-alpine:11
+FROM bellsoft/liberica-openjdk-alpine:17
 
 RUN mkdir -p /app/config /app/libs
 COPY --from=mockserver/mockserver:mockserver-5.11.1 mockserver-netty-jar-with-dependencies.jar /app/mockserver-netty-jar-with-dependencies.jar
